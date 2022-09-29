@@ -1,11 +1,13 @@
 // index.js
 // 获取应用实例
 const app = getApp()
-import {getTopCate} from '../../api/api.js'
+import {getTopCate,swiper,classify} from '../../api/api.js'
 Page({
   data: {
     list:[],
     currentindex:0,
+    swiperlist:[], //轮播图
+    classify:[], //免费直播课
   },
   highlight(e){
     //   console.log(e.currentTarget.dataset.index);
@@ -21,13 +23,27 @@ Page({
   },
   onLoad() {
     getTopCate().then(res => {
-        console.log(res.data.data);
+        // console.log([{id:-1,title:"精选"},...res.data.data]);
         this.setData({
-            list:res.data.data
+            list:[{id:-1,title:"精选"},...res.data.data]
         })
       }).catch(err => {
         wx.showToast({
             title: err.message,
+        })
+      })
+      // 轮播图
+      swiper().then(res => {
+        console.log(res.data.data);
+        this.setData({
+          swiperlist:res.data.data
+        })
+      })
+      //免费直播课
+      classify().then(res => {
+        console.log(res.data.data.course_list);
+        this.setData({
+          classify:res.data.data.course_list
         })
       })
   },

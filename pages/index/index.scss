@@ -188,19 +188,27 @@
   }
   
   .free-txt {
-    font-size: 24rpx;
+    width: 100%;
+    font-size: 28rpx;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #777;
   }
   
   .free-btn {
     background-color: #f15a24;
     color: #fff;
-    margin: 15rpx 0;
+    margin: 30rpx 0 0rpx;
     border-radius: 30rpx;
   }
   
   .free-text {
     color: #f15a24;
     font-size: 28rpx;
+
   }
   
   .goodclass {
@@ -241,3 +249,4 @@
     color: #373737;
     /* margin-top: 35rpx; */
   }
+ 

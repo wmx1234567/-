@@ -15,29 +15,21 @@
   </view>
   <!-- 轮播图 -->
   <view class="swiper">
+  
     <swiper indicator-dots indicator-color="#ccc" indicator-active-color="#fff" autoplay>
-      <swiper-item>
-        <image class="img" src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224mgsc1vs1662350004.jpg"></image>
-      </swiper-item>
-      <swiper-item>
-        <image class="img" src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224mgsc1vs1662350004.jpg"></image>
-      </swiper-item>
-      <swiper-item>
-        <image class="img" src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224mgsc1vs1662350004.jpg"></image>
-      </swiper-item>
-      <swiper-item>
-        <image class="img" src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224mgsc1vs1662350004.jpg"></image>
+      <swiper-item wx:for="{{swiperlist}}" wx:key="index">
+        <image class="img" src="{{item.banner_img}}" ></image>
       </swiper-item>
     </swiper>
     <!-- 今日直播 -->
-    <view class="contentnav">
+    <!-- <view class="contentnav">
       <view class="contentimg">
         <image class="img1" src="../../img/喵 cat.png"></image>
         <image class="img2" src="../../img/喵 cat.png"></image>
       </view>
       <text class="guandaofu">|</text>
       <text class="time">19:00</text><text class="txt">23论效救命真题破解与一…</text>
-    </view>
+    </view> -->
   </view>
   <!--  -->
   <view class="center">
@@ -54,33 +46,17 @@
     </view>
   </view>
   <view class="free">
-    <view class="free-box">
+    <view class="free-box" wx:for="{{classify}}" wx:key="index">
       <view class="free-img">
-        <image class="img" src="../../img/喵 cat.png"></image>
+        <image class="img" src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224wnkersk1659940001.png"></image>
       </view>
-      <text class="free-txt">23管综考前40天面授集训说明会(回放)</text>
+      <text class="free-txt">{{item.title}}</text>
       <button class="free-btn" style="width: 200rpx;height: 60rpx;" size="mini">免费</button>
-      <text class="free-text">3578人已报名</text>
-    </view>
-    <view class="free-box">
-      <view class="free-img">
-        <image class="img" src="../../img/喵 cat.png"></image>
-      </view>
-      <text class="free-txt">23管综考前40天面授集训说明会(回放)</text>
-      <button class="free-btn" style="width: 200rpx;height: 60rpx;" size="mini">免费</button>
-      <text class="free-text">3578人已报名</text>
-    </view>
-    <view class="free-box">
-      <view class="free-img">
-        <image class="img" src="../../img/喵 cat.png"></image>
-      </view>
-      <text class="free-txt">23管综考前40天面授集训说明会(回放)</text>
-      <button class="free-btn" style="width: 200rpx;height: 60rpx;" size="mini">免费</button>
-      <text class="free-text">3578人已报名</text>
+      <text class="free-text">{{item.sales_num}}人已报名</text>
     </view>
   </view>
   <!-- 推荐好课 -->
-  <view class="goodclass">
+  <!-- <view class="goodclass">
     <view class="goodclass-text">
       免费好课
     </view>
@@ -94,5 +70,5 @@
     <text>吕建刚</text>
     </view>
     </view>
-  </view>
-</view>
+  </view>-->
+</view> 

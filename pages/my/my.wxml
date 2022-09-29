@@ -1,2 +1,69 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<!--pages/wode/wode.wxml-->
+<view class="boximg">
+  <van-icon name="setting-o" style="position:absolute; top: 50rpx; right: 50rpx;" size="28" />
+<view class="boxheader">
+<image bindtap="login" style="width: 100rpx;height: 100rpx;border-radius: 50%;" src="	https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20191y4shelp1563346099.jpg" alt=""/>
+<view>191****7</view>
+</view>
+</view>
+<!--头部header -->
+<view class="header-bx">
+<view class="bobx-tabr"  style="box-sizing: border-box;padding: 0 30rpx;">
+  <van-icon name="logistics" size="25" />
+  <view>我的订单</view>
+  <view class="fonsize-hed">发课发快递</view>
+</view>
+<view class="bobx-tabr"  style="box-sizing: border-box;padding: 0 30rpx;">
+  <van-icon name="orders-o" size="25"/>
+  <view>兑换课程</view>
+  <view class="fonsize-hed"> 兑换码换课程</view>
+</view>
+<view class="bobx-tabr"  style="box-sizing: border-box;padding: 0 30rpx;">
+  <van-icon name="home-o" size="25" />
+  <view>地址管理</view>
+  <view class="fonsize-hed">收货地址</view>
+</view>
+</view>
+<!-- icon 导航栏 -->
+<view class="icon-bxo">
+
+<view class="icontabt">
+<view>
+  <van-icon name="star-o" /> <text class="txttitle-bxo">我的收藏</text>
+</view>
+<van-icon name="arrow" />
+</view>
+<!--  -->
+<view class="icontabt">
+<view>
+  <van-icon name="diamond-o" /> <text class="txttitle-bxo">我的会员</text>
+</view>
+<van-icon name="arrow" />
+</view>
+<view class="icontabt">
+<view>
+  <van-icon name="balance-pay" /> <text class="txttitle-bxo">我的优惠券</text>
+</view>
+<van-icon name="arrow" />
+</view>
+
+</view>
+<!--  -->
+<view class="icon-bxo">
+
+<view class="icontabt">
+<view>
+  <van-icon name="chat-o" /> <text class="txttitle-bxo">我的消息</text>
+</view>
+<van-icon name="arrow" />
+</view>
+<!--  -->
+<view class="icontabt">
+<view>
+  <van-icon name="records" /> <text class="txttitle-bxo">问题反馈</text>
+</view>
+<van-icon name="arrow" />
+</view>
+
+
+</view>
