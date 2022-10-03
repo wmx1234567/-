@@ -6,7 +6,8 @@
     "pages/course/course",
     "pages/Meow/Meow",
     "pages/tool/tool",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/zhuce/zhuce"
   ],
   "tabBar": {
       "selectedColor": "white",

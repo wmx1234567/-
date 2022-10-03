@@ -1,18 +1,18 @@
 <view class="loginbox">
     <!-- <image src="/publice/img/返回.png"></image> -->
-    <image src="/publice/img/loginimg/登录页乐学猫.png"></image>
+    <image src="../../img/乐学猫.png"></image>
 </view>
 
 <view class="inp">
     <view class="inputs">
         <view class="inputx">
-            <image src="/publice/img/loginimg/手机.png"></image><input type="text" placeholder="请输入手机号" />
+            <image src="../../img/手机.png"></image><input type="text" placeholder="请输入手机号" />
         </view>
         <view class="inputx">
-            <image src="/publice/img/loginimg/盾.png"></image><input type="text" placeholder="请输入密码" />
+            <image src="../../img/盾牌.png"></image><input type="text" placeholder="请输入密码" />
         </view>
         <view class="inputx">
-            <image src="/publice/img/loginimg/盾.png"></image>
+            <image src="../../img/盾牌.png"></image>
             <input type="text" placeholder="请输入验证码" />
             <!-- 验证码占位 -->
             <image  class="yzm" bindtap="yzm" src="{{imgyzm.img}}"></image>

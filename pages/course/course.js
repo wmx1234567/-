@@ -1,20 +1,49 @@
 // pages/course/course.js
+import {square,themeList,newsList} from '../../api/api'
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        tabdata:['广场','图书勘误','关注'],
+        squarelist:[],
+        id:0,
+        themeList:[],
+        newsList:[],
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        square().then(res => {
+            // console.log(res.data.data);
+            this.setData({
+                squarelist:res.data.data
+            })
+        })
+        themeList().then(res => {
+            console.log(res.data.data);
+            this.setData({
+                themeList:res.data.data
+            })
+        })
     },
-
+    dyna(e){
+        this.setData({
+            id:e.currentTarget.dataset.index
+        })
+        if(e.currentTarget.dataset.index == 1){
+            newsList().then(res => {
+            console.log(res.data.data);
+            this.setData({
+                newsList:res.data.data
+            })
+        })
+        }
+        
+    },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */

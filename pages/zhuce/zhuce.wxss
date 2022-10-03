@@ -17,33 +17,64 @@
 
 .inp {
   width: 90%;
+  height: 150px;
   margin: 0 auto;
 }
 
 .inp .inputs {
-  box-sizing: border-box;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .inp .inputs .inputx {
+  width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
 }
 
 .inp .inputs .inputx image {
-  width: 60rpx;
-  height: 60rpx;
+  width: 30px;
+  height: 30px;
 }
 
 .inp .inputs .inputx input {
-  width: 100%;
   height: 50px;
   border-bottom: 1px solid grey;
   margin-left: 10px;
 }
 
+.inp .inputs view:nth-child(1) {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.inp .inputs view:nth-child(1) image {
+  width: 30px;
+  height: 30px;
+}
+
+.inp .inputs view:nth-child(1) input {
+  flex: 1;
+  margin-right: 20rpx;
+}
+
+.inp .inputs view:nth-child(1) .yzms {
+  height: 30px;
+  background-color: #f15a24;
+  color: #fff;
+  font-size: 30rpx;
+  padding: 0 30rpx;
+}
+
 .inp .inputs view:nth-child(3) {
-  width: 97%;
   height: 50px;
   display: flex;
   align-items: center;
@@ -51,15 +82,15 @@
 
 .inp .inputs view:nth-child(3) input {
   flex: 1;
+  margin-right: 20rpx;
 }
 
 .inp .inputs view:nth-child(3) image {
-  width: 60rpx;
-  height: 60rpx;
+  width: 30px;
+  height: 30px;
 }
 
 .inp .inputs view:nth-child(3) .yzm {
-  margin-left: 20rpx;
   width: 100px;
   height: 30px;
 }

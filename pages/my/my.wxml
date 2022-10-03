@@ -2,7 +2,7 @@
 <view class="boximg">
   <van-icon name="setting-o" style="position:absolute; top: 50rpx; right: 50rpx;" size="28" />
 <view class="boxheader">
-<image bindtap="login" style="width: 100rpx;height: 100rpx;border-radius: 50%;" src="	https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20191y4shelp1563346099.jpg" alt=""/>
+<image bindtap="login" style="width: 100rpx;height: 100rpx;border-radius: 50%;" src="../../img/猫.png" alt=""/>
 <view>191****7</view>
 </view>
 </view>

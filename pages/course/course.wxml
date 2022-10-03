@@ -1,2 +1,129 @@
-<!--pages/course/course.wxml-->
-<text>pages/course/course.wxml</text>
+<!--pages/miaowu/miaowu.wxml-->
+<!-- 头部 -->
+<view class="top">
+  <image src="data:image/png;base64,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" class="log"></image>
+  <view class="top-right">
+    <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAsCAYAAADvjwGMAAAEMUlEQVRYR+2YXWgcVRTH/2eStaVVWwpipYiC+CL1IRCqQivZmcXsLE21IhaFlmZmXdHi50tJK3StH4giFtQozc7WoqgY0KJ0Z0wzs/GLVquCwZf6oEgFFatNqzU0debIbGa2s2t2dnYzKQh7H/ee8z+/e87dO+dewjyGKKsDAPYCWOnKEPAzCIpZ0ox2ZKkdJ99HktWjDPQGNQg4YuraTe3ozhMmu5/BW+oCj1i6lrvgMH19WxcLS7rvAjvLKsEZU4to6Vu6/uLZCwozMJBbcsa2e8nha0HC8lkYZwosfPf3pae+PDw6Ot0qUKtlomRaGRAEyjHjFgCJBgHPAnyIGSNlo/hBJWcRRmSYPjl7owAeBtATQTdgQl/D4fusD7UvmvlFgklm1CFiPAlAaCDorjxMyyZgh6lrz4YBNYWRMurLzLi/VoSmmfCmADqAbj5qvl/41Z3vy2xd2YVEL9jZyMDdABbX+e2x9MIjjYBCYcS0+hgIT9Q6875z4O2f6Pt+C1ultCF7Oc/wcyBsrrFjGrKMwjNz+TaESaWVtQ7RR4HSnCPGPaah7W9W++B8UlYVAkYCOg4xrzWN4uF6nTlh8vm88PHnx78BsNp3IKbNplF4oxUQ31bMZAfBXAz4Tt58w5U9+XzeCerNCSPJ2U0MfrsKAt5r6sV72wGpAslKEaDBqgbz7ZZRfK8pjCir4wAkz/DPGeGiqz49+MrJ+cCskwcvS0D4AcBST2fM0rX+UJhUKrfMSdh/BGr8kqVrD8wHxPdNZtRXieFn2HamFy2fmBj+63wF6qJIGTXNDN3/WWBKjhuFiThgpH4lxQId8rWYkSobmtkQRpSVhwF6wTfotmcuHht7/UwcMF7WpwIw28qG5p7qlfGfDSxmsnkw7/LmT1m6NvsRjGmIsnoawCVe8F2mru0OyYy6B8BDnsGPlq5dHRNHRUaUVTczsy0H0eNWqZDvwHQyE7bHOnumUXY6melkptXT+f+7Z6S0eoAJt3or/t7StWtaXX34OZP9CeBV3md61Cppd875bRLTykYQvVsVY3rHMgqb4oVR3VbztoDmBkvX3Fvn+RZCXL9lFezEJIAVnqHDAq0pHyx8FSeMdzP9LNBJnnDIvn6i9Novfj9DoqyMAyT6gRnYXdY1v6+JkwdSWn2aCUPVWAyjbGiZCoyUUR5lpucDEY85DtaD7H9ipfDEEt1I2HaX29oG9iM/WIERZfX3QHkWIn4UzRM+jNuh+1eIKI4LYXN6tkyysoNBTy1EhKiaBGyvNuQpWe1xCKvhcFdUgTjsCIK7LydNozDZ9EkkjoBRNdqGEWXFfUa7rlEgJhwvl4ruARrpCa3m0ItKX/n31Z/UDZyZUXNJaxajrcyIcnYnwO6zWuggwrBZ0rY1s/Pn24JZ15+7IiHY7jdmTchb3rfMfEfZKB6LCvMvqPnUtPmQZkgAAAAASUVORK5CYII="></image>
+    <image src="data:image/png;base64,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"></image>
+  </view>
+</view>
+<!-- tab栏 -->
+<view class="tab-box">
+  <text bindtap="dyna" data-index="{{index}}" wx:for="{{tabdata}}" wx:key="index" class="{{index==id?'active':''}}">{{item}}</text>
+</view>
+<!-- 滑动模块 -->
+<scroll-view scroll-x="true" wx:if="{{id == 0}}">
+  <view class="hua-box">
+    <view class="hua-item">
+      <view class="img">
+        <image src="../../img/话题榜单.png"></image>
+      </view>
+      <view class="title">···</view>
+      <view class="num">查看更多考研话题</view>
+    </view>
+    <view class="hua-item" wx:for="{{themeList}}">
+      <view class="img">
+        <image src="{{item.cover}}"></image>
+      </view>
+      <view class="title">#{{item.title}}#</view>
+      <view class="num">{{item.dyna_count}}讨论</view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 发布 -->
+<view wx:if="{{id != 1}}" class="release" wx:for="{{squarelist}}" wx:key="index">
+  <view class="release-top">
+    <view class="left">
+      <!-- 头像 -->
+      <view class="img">
+        <image src="{{item.square_info.avatar}}" class="to"></image>
+        <!-- <image src="/images/v.png" class="v"></image> -->
+      </view>
+      <view class="name-box">
+        <!-- 账号名 -->
+        <view>{{item.square_info.user_nickname}}</view>
+        <!-- 日期 -->
+        <view class="time">{{item.square_info.created_at}}</view>
+      </view>
+    </view>
+    <!-- 关注 -->
+    <view class="right">
+      <view class="guan">
+        +关注</view>
+    </view>
+    <!-- 三个点 -->
+    <view class="dian">
+      <text></text>
+      <text></text>
+      <text></text>
+    </view>
+  </view>
+  <!-- 内容 -->
+  <view class="substance">
+    <view class="substance-title">{{item.square_info.dyna_details}}</view>
+    <view class="substance-img">
+    <view wx:for="{{item.square_info.dyna_cover}}"  wx:key="index">
+       <image src="{{item}}"></image>
+    </view>
+      
+    </view>
+  </view>
+  <!-- 尾部 -->
+  <view class="footer">
+    <view>
+      <image src="../../img/分享.png"></image>
+    </view>
+    <view>
+      <image src="../../img/评论.png"></image>
+      <text>{{item.square_info.comment_count}}</text>
+    </view>
+    <view>
+      <image src="../../img/猫爪.png"></image>
+      <text>{{item.square_info.likes}}</text>
+    </view>
+  </view>
+</view>
+<!-- 定位 -->
+<view class="miao"></view>
+<!-- 图书勘误 -->
+<view wx:if="{{id != 2}}" class="books" wx:for="{{newsList}}" wx:key="index">
+   <!-- 头部 -->
+   <view>
+      <view class="left">
+        <image src="{{item.avatar}}"></image>
+        <view>
+          <view>{{item.user_nickname}}</view>
+          <view>{{item.updated_at}}</view>
+        </view>
+      </view>
+      <view class="right">+关注</view>
+   </view>
+   <!-- 图书勘误区 -->
+   <view class="h1">{{item.title}}</view>
+   <!-- 图书勘误区 -->
+   <!-- 内容 -->
+   <view class="content">
+      <image src="{{item.cover}}"></image>
+      <view>
+        {{item.content}}
+        <text>...查看全文</text>
+      </view>
+   </view>
+   <!-- 内容 -->
+   <!-- 尾部 -->
+   <view class="footer">
+    <view>
+      <image src="{{item.cover}}"></image>
+    </view>
+    <view>
+      <image src="../../img/评论.png"></image>
+      <text>{{item.comments}}</text>
+    </view>
+    <view>
+      <image src="../../img/猫爪.png"></image>
+      <text>{{item.likes}}</text>
+    </view>
+  </view>
+   <!-- 尾部 -->
+</view>
+<!-- 图书勘误 -->

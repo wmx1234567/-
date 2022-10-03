@@ -1,1 +1,277 @@
-/* pages/course/course.wxss */
+/* pages/miaowu/miaowu.wxss */
+/* top部 */
+.top {
+    width: 100vw;
+    height: 140rpx;
+    background: #fff url("https://wap.lexuemiao.com/img/header_bar.72fa2a02.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .top .log {
+    width: 150rpx;
+    height: 60rpx;
+    margin-left: 40rpx;
+    margin-top: 40rpx;
+  }
+  
+  .top-right image {
+    width: 40rpx;
+    height: 50rpx;
+    margin-right: 40rpx;
+    margin-top: 40rpx;
+  }
+  
+  /* tab部分 */
+  .tab-box {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .tab-box text {
+    text-align: center;
+    width: 140rpx;
+    padding: 10rpx 0;
+    font-size: 32rpx;
+  }
+  
+  .active {
+    color: #f15c27;
+    border-bottom: 8rpx solid #f15c27;
+  }
+  
+  /* 滑动模块 */
+  .hua-box {
+    /* width: 20000rpx; */
+    display: flex;
+    margin: 60rpx 0;
+    padding: 0 10rpx;
+  }
+  
+  .hua-item {
+    width: 200rpx;
+    height: 450rpx;
+    margin: 0 12rpx;
+  }
+  
+  .hua-item .img {
+    border-radius: 20rpx;
+  }
+  
+  .hua-item .img image {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 20rpx;
+  }
+  
+  .hua-item view {
+    font-size: 24rpx;
+    margin: 20rpx 0;
+    text-align: center;
+  }
+  
+  .hua-item .title {
+    color: #f15a24;
+  }
+  
+  .hua-item .num {
+    color: #999;
+  }
+  
+  /* 发布 */
+  .release {
+    width: 100%;
+    padding: 20rpx 10rpx;
+  }
+  
+  .release .release-top {
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40rpx;
+    box-sizing: border-box;
+  }
+  
+  .release .left {
+    display: flex;
+  }
+  
+  .release .left .name-box {
+    margin-left: 20rpx;
+    font-size: 32rpx;
+  }
+  
+  .release .left .name-box .time {
+    color: #999;
+    margin-top: 8rpx;
+  }
+  
+  .release .left .img {
+    position: relative;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+  }
+  
+  .release .left .v {
+    position: absolute;
+    right: -6rpx;
+    bottom: -6rpx;
+    width: 26rpx;
+    height: 26rpx;
+  }
+  
+  .release .left .img .to {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .release .release-top .right .guan {
+    width: 100rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    margin-top: 26rpx;
+    float: right;
+    color: #f15a24;
+    background: rgba(241, 90, 36, .12);
+    border-radius: 35rpx;
+    text-align: center;
+    font-size: 22rpx;
+    font-weight: 500;
+    margin-left: 280rpx;
+  }
+  
+  .dian {
+    float: right;
+    margin-left: 10rpx;
+    margin-top: 40rpx;
+  }
+  
+  .dian text {
+    background: #9fa3b0;
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 50%;
+    float: left;
+    margin-left: 8rpx;
+  }
+  
+  .dian text:nth-of-type(2) {
+    background: #424963;
+  }
+  
+  /* 内容 */
+  .substance {
+    padding: 0 40rpx;
+    font-size: 32rpx;
+  }
+  .substance .substance-title{
+    margin: 20rpx 0;
+  }
+  .substance .substance-img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .substance .substance-img view{
+    height: 300rpx;
+    width: 48%;
+    overflow: hidden;
+    border-radius: 25rpx;
+    margin-bottom: 20rpx;
+  }
+  .substance .substance-img view image{
+    width: 100%;
+  }
+  /* 尾部 */
+  .footer{
+    padding: 20rpx 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 20rpx solid #efefef;
+  }
+  .footer view{
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    font-size: 30rpx;
+  }
+  .footer view image{
+    width: 40rpx;
+    height: 35rpx;
+    margin-right: 10rpx;
+  }
+  /* 定位 */
+  .miao{
+    position: fixed;
+    right: 20rpx;
+    width: 150rpx;
+    height: 150rpx;
+    background: url('https://wap.lexuemiao.com/img/fawen.bd444e76.png') no-repeat top;
+    background-size: 100% 100%;
+    bottom: 10rpx;
+  }
+  .books{
+      padding: 20rpx 40rpx;
+      border-bottom: 20rpx solid #ccc;
+  }
+  .books view:nth-child(1){
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .books .left view:nth-child(2) view:nth-child(2){
+      font-size: 28rpx;
+      color: #777;
+      margin-top: 6rpx;
+  }
+  .books .left view:nth-child(2) view:nth-child(1){
+      font-size: 32rpx;
+      margin-top: 6rpx;
+  }
+  .books .left image{
+        width: 70rpx;
+        height: 70rpx;
+        margin-right: 20rpx;
+        border-radius: 50%;
+}
+.books .right{
+    width: 120rpx;
+    height: 50rpx;
+    background-color: #fdebe4;
+    padding: 5rpx 20rpx;
+    border-radius: 50rpx;
+    color: #f26f41;
+    font-size: 26rpx;
+    text-align: center;
+    line-height: 50rpx;
+}
+.books .h1{
+    font-size: 40rpx;
+    font-weight: 600;
+}
+.books .content{
+    display: flex;
+    margin-top: 20rpx;
+}
+.books .content view{
+    overflow: hidden;             /*超出内容隐藏*/
+/* text-overflow: ellipsis;      超出内容为省略号 */
+display: -webkit-box;         /*内容不换行*/
+-webkit-line-clamp: 3;        /*超出几行*/
+-webkit-box-orient: vertical; /*从上到下垂直排列子元素*/
+height: 100%;            /*没有效果时添加或删除改行*/
+}
+.books .content view{
+    width: 70%;
+}
+.books .content view text{
+    color: #e78e16;
+}
+.books .content image{
+    width: 200rpx;
+    height: 160rpx;
+    margin-right: 10rpx;
+}
